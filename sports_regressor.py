@@ -175,7 +175,6 @@ class SportsRegressor:
                 'RMSE': np.sqrt(mean_squared_error(y_test, y_pred)),
                 'MAE': mean_absolute_error(y_test, y_pred),
                 'R²': r2_score(y_test, y_pred),
-                'Explained Variance': self.model.score(self.X_test, self.y_test)
             }
                 
             return self.metrics
